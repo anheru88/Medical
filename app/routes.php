@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'userController@index');
+Route::get('/medico/actualizar', 'UserController@actualizarMedico');
+Route::get('/medico/insumos', 'UserController@insumos');
+Route::get('/medico/medicamentos', 'UserController@medicamentos');
+Route::get('/medico/medicamentos/maestro', 'UserController@maestroMedicamentos');
+Route::get('/medico/consultas', 'UserController@consultas');
