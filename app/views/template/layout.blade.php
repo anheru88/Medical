@@ -505,7 +505,7 @@
                             <li>
                                 <a class="logout_open" href="#logout">
                                     <i class="fa fa-sign-out"></i> Logout
-                                    <strong>John Smith</strong>
+                                    <strong>Hayder Espinoza</strong>
                                 </a>
                             </li>
                         </ul>
@@ -535,8 +535,8 @@
                             <i class="fa fa-key"></i> Logged in as
                         </p>
                         <p class="name tooltip-sidebar-logout">
-                            John
-                            <span class="last-name">Smith</span> <a style="color: inherit" class="logout_open" href="#logout" data-toggle="tooltip" data-placement="top" title="Logout"><i class="fa fa-sign-out"></i></a>
+                            Hayder
+                            <span class="last-name">Espinoza</span> <a style="color: inherit" class="logout_open" href="#logout" data-toggle="tooltip" data-placement="top" title="Logout"><i class="fa fa-sign-out"></i></a>
                         </p>
                         <div class="clearfix"></div>
                     </li>
@@ -550,20 +550,105 @@
                             </button>
                         </form>
                     </li>
-                    <!-- end SIDE NAV SEARCH -->
-                    <!-- begin DASHBOARD LINK -->
-                    <li>
-                        <a class="active" href="index.html">
-                            <i class="fa fa-dashboard"></i> Dashboard
-                        </a>
-                    </li>
-                    <!-- end DASHBOARD LINK -->
-                    <!-- begin CHARTS DROPDOWN -->
+                    <!-- Panel actualizar -->
                     <li class="panel">
-                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#charts">
-                            <i class="fa fa-bar-chart-o"></i> Charts <i class="fa fa-caret-down"></i>
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#actualizar">
+                            <i class="fa fa-refresh"></i> Actualizar <i class="fa fa-caret-down"></i>
                         </a>
-                        <ul class="collapse nav" id="charts">
+                        <ul class="collapse nav" id="actualizar">
+                            <li>
+                                <a href="{{ url('medico/actualizar') }}">
+                                    <i class="fa fa-angle-double-right"></i> Actualizar medicos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/insumos') }}">
+                                    <i class="fa fa-angle-double-right"></i> Maestro de Insumos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/medicamentos') }}">
+                                    <i class="fa fa-angle-double-right"></i> Presentación Medicamentos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/maestro/medicamentos')}}">
+                                    <i class="fa fa-angle-double-right"></i> Maestro Medicamentos-Vademecum
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/consultas') }}">
+                                    <i class="fa fa-angle-double-right"></i> Actualización de Consultas y Procedimientos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/diagnosticos') }}">
+                                    <i class="fa fa-angle-double-right"></i> Actualización de Diagnosticos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/consultas') }}">
+                                    <i class="fa fa-angle-double-right"></i> Actualización de Tarifas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('cliente/actualizar') }}">
+                                    <i class="fa fa-angle-double-right"></i> Actualización de Clientes y Programas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('cliente/actualizarPaciente') }}">
+                                    <i class="fa fa-angle-double-right"></i> Actualización Pacientes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/consultas') }}">
+                                    <i class="fa fa-angle-double-right"></i> Asignación de Especialidad por Estudio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/consultas') }}">
+                                    <i class="fa fa-angle-double-right"></i>Actualización Cuotas y Copagos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/consultas') }}">
+                                    <i class="fa fa-angle-double-right"></i> Actualización Cirugias
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/consultas') }}">
+                                    <i class="fa fa-angle-double-right"></i> Actualización de Departamentos y Municipio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/consultas') }}">
+                                    <i class="fa fa-angle-double-right"></i> Actualización Salas y Camas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/consultas') }}">
+                                    <i class="fa fa-angle-double-right"></i> Actecedentes del Paciente
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/consultas') }}">
+                                    <i class="fa fa-angle-double-right"></i> Clasificaión de Cirugias
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('medico/consultas') }}">
+                                    <i class="fa fa-angle-double-right"></i> Subclasificación de Cirugias
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- PAnel operaciones -->
+                    <li class="panel">
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#operaciones">
+                            <i class="fa fa-calendar"></i> Operaciones <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="collapse nav" id="operaciones">
                             <li>
                                 <a href="flot.html">
                                     <i class="fa fa-angle-double-right"></i> Flot Charts
@@ -576,199 +661,42 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- end CHARTS DROPDOWN -->
-                    <!-- begin FORMS DROPDOWN -->
+                    <!--Panel consultas-->
                     <li class="panel">
-                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#forms">
-                            <i class="fa fa-edit"></i> Forms <i class="fa fa-caret-down"></i>
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#consultas">
+                            <i class="fa fa-search"></i> Consultas <i class="fa fa-caret-down"></i>
                         </a>
-                        <ul class="collapse nav" id="forms">
+                        <ul class="collapse nav" id="consultas">
                             <li>
-                                <a href="basic-form-elements.html">
-                                    <i class="fa fa-angle-double-right"></i> Basic Elements
+                                <a href="flot.html">
+                                    <i class="fa fa-angle-double-right"></i> Flot Charts
                                 </a>
                             </li>
                             <li>
-                                <a href="advanced-form-elements.html">
-                                    <i class="fa fa-angle-double-right"></i> Advanced Elements
-                                </a>
-                            </li>
-                            <li>
-                                <a href="validation.html">
-                                    <i class="fa fa-angle-double-right"></i> Validation
-                                </a>
-                            </li>
-                            <li>
-                                <a href="wysiwyg-editor.html">
-                                    <i class="fa fa-angle-double-right"></i> WYSIWYG Editor
-                                </a>
-                            </li>
-                            <li>
-                                <a href="dropzone-uploader.html">
-                                    <i class="fa fa-angle-double-right"></i> Dropzone Uploader
+                                <a href="morris.html">
+                                    <i class="fa fa-angle-double-right"></i> Morris.js
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <!-- end FORMS DROPDOWN -->
-                    <!-- begin CALENDAR LINK -->
-                    <li>
-                        <a href="calendar.html">
-                            <i class="fa fa-calendar"></i> Calendar
-                        </a>
-                    </li>
-                    <!-- end CALENDAR LINK -->
-                    <!-- begin TABLES DROPDOWN -->
+                    <!--Panel seguridad-->
                     <li class="panel">
-                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#tables">
-                            <i class="fa fa-table"></i> Tables <i class="fa fa-caret-down"></i>
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#seguridad">
+                            <i class="fa fa-lock"></i> Seguridad <i class="fa fa-caret-down"></i>
                         </a>
-                        <ul class="collapse nav" id="tables">
+                        <ul class="collapse nav" id="seguridad">
                             <li>
-                                <a href="basic-tables.html">
-                                    <i class="fa fa-angle-double-right"></i> Basic Tables
+                                <a href="flot.html">
+                                    <i class="fa fa-angle-double-right"></i> Flot Charts
                                 </a>
                             </li>
                             <li>
-                                <a href="advanced-tables.html">
-                                    <i class="fa fa-angle-double-right"></i> Advanced Tables
+                                <a href="morris.html">
+                                    <i class="fa fa-angle-double-right"></i> Morris.js
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <!-- end TABLES DROPDOWN -->
-                    <!-- begin UI ELEMENTS DROPDOWN -->
-                    <li class="panel">
-                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#ui-elements">
-                            <i class="fa fa-wrench"></i> UI Elements <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="collapse nav" id="ui-elements">
-                            <li>
-                                <a href="portlets.html">
-                                    <i class="fa fa-angle-double-right"></i> Portlets &amp; Widgets
-                                </a>
-                            </li>
-                            <li>
-                                <a href="buttons.html">
-                                    <i class="fa fa-angle-double-right"></i> Buttons
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tabs-accordions.html">
-                                    <i class="fa fa-angle-double-right"></i> Tabs &amp; Accordions
-                                </a>
-                            </li>
-                            <li>
-                                <a href="notifications.html">
-                                    <i class="fa fa-angle-double-right"></i> Popups &amp; Notifications
-                                </a>
-                            </li>
-                            <li>
-                                <a href="sliders.html">
-                                    <i class="fa fa-angle-double-right"></i> Sliders
-                                </a>
-                            </li>
-                            <li>
-                                <a href="typography.html">
-                                    <i class="fa fa-angle-double-right"></i> Typography
-                                </a>
-                            </li>
-                            <li>
-                                <a href="icons.html">
-                                    <i class="fa fa-angle-double-right"></i> Icons
-                                </a>
-                            </li>
-                            <li>
-                                <a href="grid.html">
-                                    <i class="fa fa-angle-double-right"></i> Grid
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- end UI ELEMENTS DROPDOWN -->
-                    <!-- begin MESSAGE CENTER DROPDOWN -->
-                    <li class="panel">
-                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#message-center">
-                            <i class="fa fa-inbox"></i> Message Center <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="collapse nav" id="message-center">
-                            <li>
-                                <a href="mailbox.html">
-                                    <i class="fa fa-angle-double-right"></i> Mailbox
-                                </a>
-                            </li>
-                            <li>
-                                <a href="compose-message.html">
-                                    <i class="fa fa-angle-double-right"></i> Compose Message
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <i class="fa fa-angle-double-right"></i> Chat
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- end MESSAGE CENTER DROPDOWN -->
-                    <!-- begin PAGES DROPDOWN -->
-                    <li class="panel">
-                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#pages">
-                            <i class="fa fa-files-o"></i> Pages <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="collapse nav" id="pages">
-                            <li>
-                                <a href="profile.html">
-                                    <i class="fa fa-angle-double-right"></i> User Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a href="invoice.html">
-                                    <i class="fa fa-angle-double-right"></i> Invoice
-                                </a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">
-                                    <i class="fa fa-angle-double-right"></i> Pricing Tables
-                                </a>
-                            </li>
-                            <li>
-                                <a href="faq.html">
-                                    <i class="fa fa-angle-double-right"></i> FAQ Page
-                                </a>
-                            </li>
-                            <li>
-                                <a href="search-results.html">
-                                    <i class="fa fa-angle-double-right"></i> Search Results
-                                </a>
-                            </li>
-                            <li>
-                                <a href="login.html">
-                                    <i class="fa fa-angle-double-right"></i> Login Basic
-                                </a>
-                            </li>
-                            <li>
-                                <a href="login-social.html">
-                                    <i class="fa fa-angle-double-right"></i> Login Social
-                                </a>
-                            </li>
-                            <li>
-                                <a href="404.html">
-                                    <i class="fa fa-angle-double-right"></i> 404 Error
-                                </a>
-                            </li>
-                            <li>
-                                <a href="500.html">
-                                    <i class="fa fa-angle-double-right"></i> 500 Error
-                                </a>
-                            </li>
-                            <li>
-                                <a href="blank.html">
-                                    <i class="fa fa-angle-double-right"></i> Blank Page
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- end PAGES DROPDOWN -->
                 </ul>
                 <!-- /.side-nav -->
             </div>
@@ -781,8 +709,8 @@
         <div id="page-wrapper">
 
             <div class="page-content">
-
-
+                @section('contenido')
+                @show
             </div>
             <!-- /.page-content -->
 
@@ -800,7 +728,7 @@
     {{ HTML::script('assets/js/plugins/popupoverlay/jquery.popupoverlay.js') }}
     {{ HTML::script('assets/js/plugins/popupoverlay/defaults.js') }}
     <!-- Logout Notification Box -->
-  
+
     <!-- /#logout -->
     <!-- Logout Notification jQuery -->
     {{ HTML::script('assets/js/plugins/popupoverlay/logout.js') }}
@@ -834,7 +762,7 @@
 
     <!-- THEME SCRIPTS -->
     {{ HTML::script('assets/js/flex.js') }}
-    {{ HTML::script('assets/js/demo/dashboard-demo.js') }}
+    <!--{{ HTML::script('assets/js/demo/dashboard-demo.js') }}-->
 
 </body>
 
