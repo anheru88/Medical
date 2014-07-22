@@ -557,87 +557,87 @@
                         </a>
                         <ul class="collapse nav" id="actualizar">
                             <li>
-                                <a href="{{ url('medico/actualizar') }}">
+                                <a href="{{ url('medico') }}">
                                     <i class="fa fa-angle-double-right"></i> Actualizar medicos
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/insumos') }}">
+                                <a href="{{ url('maestroInsumos') }}">
                                     <i class="fa fa-angle-double-right"></i> Maestro de Insumos
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/medicamentos') }}">
+                                <a href="{{ url('presentacionMedicamentos') }}">
                                     <i class="fa fa-angle-double-right"></i> Presentación Medicamentos
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/maestro/medicamentos')}}">
+                                <a href="{{ url('maestroMedicamentos')}}">
                                     <i class="fa fa-angle-double-right"></i> Maestro Medicamentos-Vademecum
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/consultas') }}">
+                                <a href="{{ url('ConsultasProcedimientos') }}">
                                     <i class="fa fa-angle-double-right"></i> Actualización de Consultas y Procedimientos
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/diagnosticos') }}">
+                                <a href="{{ url('diagnosticos') }}">
                                     <i class="fa fa-angle-double-right"></i> Actualización de Diagnosticos
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/consultas') }}">
+                                <a href="{{ url('tarifas') }}">
                                     <i class="fa fa-angle-double-right"></i> Actualización de Tarifas
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('cliente/actualizar') }}">
+                                <a href="{{ url('clientesProgramas') }}">
                                     <i class="fa fa-angle-double-right"></i> Actualización de Clientes y Programas
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('cliente/actualizarPaciente') }}">
+                                <a href="{{ url('pacientes') }}">
                                     <i class="fa fa-angle-double-right"></i> Actualización Pacientes
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/consultas') }}">
+                                <a href="{{ url('especialidad') }}">
                                     <i class="fa fa-angle-double-right"></i> Asignación de Especialidad por Estudio
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/consultas') }}">
+                                <a href="{{ url('cuotasCopagos') }}">
                                     <i class="fa fa-angle-double-right"></i>Actualización Cuotas y Copagos
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/consultas') }}">
+                                <a href="{{ url('cirugias') }}">
                                     <i class="fa fa-angle-double-right"></i> Actualización Cirugias
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/consultas') }}">
+                                <a href="{{ url('departamentoMunicipios') }}">
                                     <i class="fa fa-angle-double-right"></i> Actualización de Departamentos y Municipio
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/consultas') }}">
+                                <a href="{{ url('salaCamas') }}">
                                     <i class="fa fa-angle-double-right"></i> Actualización Salas y Camas
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/consultas') }}">
+                                <a href="{{ url('antecedentesPaciente') }}">
                                     <i class="fa fa-angle-double-right"></i> Actecedentes del Paciente
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/consultas') }}">
+                                <a href="{{ url('clasificacionCirugias') }}">
                                     <i class="fa fa-angle-double-right"></i> Clasificaión de Cirugias
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('medico/consultas') }}">
+                                <a href="{{ url('subclasificacionCirugias') }}">
                                     <i class="fa fa-angle-double-right"></i> Subclasificación de Cirugias
                                 </a>
                             </li>

@@ -10,34 +10,54 @@ class UserController extends BaseController
 	}
 	public function actualizarMedico()
 	{
-		return View::make('medico.actualizar_medico');
+		return View::make('formulario.actualizar_medico');
 	}
 	public function insumos()
 	{
-		return View::make('medico.maestro_insumos');
+		return View::make('formulario.maestro_insumos');
 	}
 	public function medicamentos()
 	{
-		return View::make('medico.presentacion_medicamentos');
+		return View::make('formulario.presentacion_medicamentos');
 	}
 	public function maestroMedicamentos()
 	{
-		return View::make('medico.maestro_medicamentos');
+		return View::make('formulario.maestro_medicamentos');
 	}
 	public function consultas()
 	{
-		return View::make('medico.actualizar_consultas_procedimientos');
+		return View::make('formulario.actualizar_consultas_procedimientos');
 	}
 	public function diagnosticos()
 	{
-		return View::make('medico.actualizar_diagnostico');
+		return View::make('formulario.actualizar_diagnostico');
 	}
 	public function actualizarCliente()
 	{
-		return View::make('cliente.actualizar_cliente_programa');
+		return View::make('formulario.actualizar_cliente_programa');
 	}
 	public function actualizarPaciente()
 	{
-		return View::make('cliente.actualizar_paciente');
+		return View::make('formulario.actualizar_paciente');
+	}
+	public function actualizarDepartamentoMunicipio()
+	{
+		return View::make('formulario.actualizar_departamento_municipio');
+	}
+	public function actualizarSalasCamas()
+	{
+		return View::make('formulario.actualizar_salas_camas');
+	}
+	public function antecedentes()
+	{
+		return View::make('formulario.antecedentes');
+	}
+	public function cirugia()
+	{
+		return View::make('formulario.cirugia');
+	}
+	public function subcirugia()
+	{
+		return View::make('formulario.subcirugia');
 	}
 }

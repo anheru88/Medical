@@ -12,11 +12,20 @@
 */
 
 Route::get('/', 'userController@index');
-Route::get('/medico/actualizar', 'UserController@actualizarMedico');
-Route::get('/medico/insumos', 'UserController@insumos');
-Route::get('/medico/medicamentos', 'UserController@medicamentos');
-Route::get('/medico/maestro/medicamentos', 'UserController@maestroMedicamentos');
-Route::get('/medico/consultas', 'UserController@consultas');
-Route::get('/medico/diagnosticos', 'UserController@diagnosticos');
-Route::get('/cliente/actualizar', 'UserController@actualizarCliente');
-Route::get('/cliente/actualizarPaciente', 'UserController@actualizarPaciente');
+Route::get('/medico', 'UserController@actualizarMedico');
+Route::get('/maestroInsumos', 'UserController@insumos');
+Route::get('/presentacionMedicamentos', 'UserController@medicamentos');
+Route::get('/maestroMedicamentos', 'UserController@maestroMedicamentos');
+Route::get('/ConsultasProcedimientos', 'UserController@consultas');
+Route::get('/diagnosticos', 'UserController@diagnosticos');
+Route::get('/tarifas', 'UserController@index');
+Route::get('/clientesProgramas', 'UserController@actualizarCliente');
+Route::get('/pacientes', 'UserController@actualizarPaciente');
+Route::get('/especialidad', 'UserController@index');
+Route::get('/cuotasCopagos', 'UserController@index');
+Route::get('/cirugias', 'UserController@index');
+Route::get('/departamentoMunicipios', 'UserController@actualizarDepartamentoMunicipio');
+Route::get('/salaCamas', 'UserController@actualizarSalasCamas');
+Route::get('/antecedentesPaciente', 'UserController@antecedentes');
+Route::get('/clasificacionCirugias', 'UserController@cirugia');
+Route::get('/subclasificacionCirugias', 'UserController@subcirugia');
