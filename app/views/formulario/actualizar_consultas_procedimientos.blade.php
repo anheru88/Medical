@@ -15,10 +15,11 @@ Actualización de Consultas y Procedimientos
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<p>
-			<button class="btn btn-info">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_cups">
 				<i class="fa fa-plus-circle"></i>
 				Tipo de CUPS
 			</button>
+			@extends('formulario.form_cups')
 			<button class="btn btn-info">
 				<i class="fa fa-plus-circle"></i>
 				Categoria
