@@ -58,5 +58,4 @@ Presentación Medicamentos
 		</table>
 	</div>
 </div>
-
 @stop
