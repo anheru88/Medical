@@ -27,10 +27,12 @@ Maestro de Insumos
 			</button>
 			@extends('formulario.form_categoria')
 			@parent
-			<button class="btn btn-info">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_subcategoria">
 				<i class="fa fa-plus-circle"></i>
-				Subcategoria
+				Subctaegoria
 			</button>
+			@extends('formulario.form_subcategoria')
+			@parent
 		</p>
 	</div>
 	<div class="col-sm-4 pull-right">
