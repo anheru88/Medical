@@ -14,10 +14,14 @@ Actualizar Medico
 </div>
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
-		<p><button class="btn btn-info">
-			<i class="fa fa-plus-circle"></i>
-			Medico
-		</button></p>
+		<p>
+			<button class="btn btn-info btn-lg" data-toggle="modal" data-target="#agregar_medico">
+				<i class="fa fa-plus-circle"></i>
+				Medico
+			</button>
+			@extends('formulario.form_medico')
+			@parent
+		</p>
 	</div>
 	<div class="col-lg-4  pull-right">
 		<div class="input-group">
