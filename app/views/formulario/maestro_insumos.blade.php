@@ -15,10 +15,12 @@ Maestro de Insumos
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<p>
-			<button class="btn btn-info">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_insumo">
 				<i class="fa fa-plus-circle"></i>
 				Insumo
 			</button>
+			@extends('formulario.form_insumo')
+			@parent
 			<button class="btn btn-info">
 				<i class="fa fa-plus-circle"></i>
 				Categoria

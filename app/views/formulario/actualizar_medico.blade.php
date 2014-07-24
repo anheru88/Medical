@@ -15,7 +15,7 @@ Actualizar Medico
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<p>
-			<button class="btn btn-info btn-lg" data-toggle="modal" data-target="#agregar_medico">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_medico">
 				<i class="fa fa-plus-circle"></i>
 				Medico
 			</button>
