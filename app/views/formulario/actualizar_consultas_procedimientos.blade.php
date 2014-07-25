@@ -20,10 +20,11 @@ Actualización de Consultas y Procedimientos
 				Tipo de CUPS
 			</button>
 			@extends('formulario.form_cups')
-			<button class="btn btn-info">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_categoria">
 				<i class="fa fa-plus-circle"></i>
 				Categoria
 			</button>
+			@extends('formulario.form_categoria_consulta')
 			<button class="btn btn-info">
 				<i class="fa fa-plus-circle"></i>
 				Procedimiento
