@@ -15,18 +15,24 @@ Maestro de Insumos
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<p>
-			<button class="btn btn-info">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_insumo">
 				<i class="fa fa-plus-circle"></i>
 				Insumo
 			</button>
-			<button class="btn btn-info">
+			@extends('formulario.form_insumo')
+			@parent
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_categoria">
 				<i class="fa fa-plus-circle"></i>
 				Categoria
 			</button>
-			<button class="btn btn-info">
+			@extends('formulario.form_categoria')
+			@parent
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_subcategoria">
 				<i class="fa fa-plus-circle"></i>
-				Subcategoria
+				Subctaegoria
 			</button>
+			@extends('formulario.form_subcategoria')
+			@parent
 		</p>
 	</div>
 	<div class="col-sm-4 pull-right">

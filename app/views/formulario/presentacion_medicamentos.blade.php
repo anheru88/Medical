@@ -14,18 +14,22 @@ Presentación Medicamentos
 </div>
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
-		<p><button class="btn btn-info">
-			<i class="fa fa-plus-circle"></i>
-			Agregar
-		</button></p>
+		<p>
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_presentacion_medicamento">
+				<i class="fa fa-plus-circle"></i>
+				Agregar
+			</button>
+			@extends('formulario.form_presentacion_medicamento')
+			@parent
+		</p>
 	</div>
 	<div class="col-lg-4  pull-right">
 		<div class="input-group">
-		<input type="text" class="form-control">
-		<span class="input-group-btn">
-			<button class="btn btn-info" type="button">Buscar</button>
-		</span>
-	</div>
+			<input type="text" class="form-control">
+			<span class="input-group-btn">
+				<button class="btn btn-info" type="button">Buscar</button>
+			</span>
+		</div>
 	</div>
 </div>
 <div class="row">
@@ -54,5 +58,4 @@ Presentación Medicamentos
 		</table>
 	</div>
 </div>
-
 @stop

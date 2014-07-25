@@ -19,14 +19,17 @@ Maestro Medicamentos
 				<i class="fa fa-plus-circle"></i>
 				Medicamento
 			</button>
-			<button class="btn btn-info">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_und_medida">
 				<i class="fa fa-plus-circle"></i>
 				Und/Medida
 			</button>
-			<button class="btn btn-info">
+			@extends('formulario.form_und_medida')
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_und_admon">
 				<i class="fa fa-plus-circle"></i>
-				Via ADMON
+				Und Admon
 			</button>
+			@extends('formulario.form_und_admon')
+
 		</p>
 	</div>
 	<div class="col-sm-4 pull-right">
@@ -76,5 +79,4 @@ Maestro Medicamentos
 		</table>
 	</div>
 </div>
-
 @stop
