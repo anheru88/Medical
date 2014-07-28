@@ -15,14 +15,16 @@ Actualización Clientes y Programas
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<p>
-			<button class="btn btn-info">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_cliente">
 				<i class="fa fa-plus-circle"></i>
 				Cliente
 			</button>
-			<button class="btn btn-info">
+			@extends('formulario.form_cliente')
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_programa">
 				<i class="fa fa-plus-circle"></i>
 				Programa
 			</button>
+			@extends('formulario.form_programa')
 		</p>
 	</div>
 	<div class="col-lg-4  pull-right">
