@@ -15,14 +15,16 @@ Actualización Departamento y Municipio
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<p>
-			<button class="btn btn-info">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_departamento">
 				<i class="fa fa-plus-circle"></i>
-				Depatamento
+				Departamento
 			</button>
-			<button class="btn btn-info">
+			@extends('formulario.form_departamento')
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_municipio">
 				<i class="fa fa-plus-circle"></i>
 				Municipio
 			</button>
+			@extends('formulario.form_municipio')
 		</p>
 	</div>
 	<div class="col-lg-4  pull-right">
