@@ -15,14 +15,16 @@ Actualización Salas y Camas
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<p>
-			<button class="btn btn-info">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_sala">
 				<i class="fa fa-plus-circle"></i>
-				Salas
+				Sala
 			</button>
-			<button class="btn btn-info">
+			@extends('formulario.form_sala')
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_cama">
 				<i class="fa fa-plus-circle"></i>
-				Camas
+				Cama
 			</button>
+			@extends('formulario.form_cama')
 		</p>
 	</div>
 	<div class="col-lg-4  pull-right">
