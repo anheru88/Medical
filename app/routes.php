@@ -29,3 +29,8 @@ Route::get('/salaCamas', 'UserController@actualizarSalasCamas');
 Route::get('/antecedentesPaciente', 'UserController@antecedentes');
 Route::get('/clasificacionCirugias', 'UserController@cirugia');
 Route::get('/subclasificacionCirugias', 'UserController@subcirugia');
+Route::get('/agenda', 'UserController@agenda');
+Route::get('/admisionPacientes', 'UserController@admisionPacientes');
+Route::get('/prefactura', 'UserController@prefactura');
+Route::get('/facturaClinica', 'UserController@facturaClinica');
+Route::get('/generacionRips', 'UserController@generacionRips');
