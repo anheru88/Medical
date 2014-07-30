@@ -13,7 +13,7 @@
     <!-- PACE LOAD BAR PLUGIN - This creates the subtle load bar effect at the top of the page. -->
     {{ HTML::style('assets/css/plugins/pace/pace.css') }}
     {{ HTML::script('assets/js/plugins/pace/pace.js') }}
-
+    
     <!-- GLOBAL STYLES - Include these on every page. -->
     {{ HTML::style('assets/css/plugins/bootstrap/css/bootstrap.min.css') }}
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel="stylesheet" type="text/css">
@@ -32,6 +32,8 @@
     <!-- THEME STYLES - Include these on every page. -->
     {{ HTML::style('assets/css/style.css') }}
     {{ HTML::style('assets/css/plugins.css') }}
+    @section('estilos')
+    @show
 
     <!-- THEME DEMO STYLES - Use these styles for reference if needed. Otherwise they can be deleted. -->
 
@@ -650,13 +652,33 @@
                         </a>
                         <ul class="collapse nav" id="operaciones">
                             <li>
-                                <a href="flot.html">
-                                    <i class="fa fa-angle-double-right"></i> Flot Charts
+                                <a href="{{ url('agenda') }}">
+                                    <i class="fa fa-angle-double-right"></i> 
+                                    Agenda Medica
                                 </a>
                             </li>
                             <li>
-                                <a href="morris.html">
-                                    <i class="fa fa-angle-double-right"></i> Morris.js
+                                <a href="{{ url('admisionPacientes') }}">
+                                    <i class="fa fa-angle-double-right"></i> 
+                                    Admision de Pacientes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('prefactura') }}">
+                                    <i class="fa fa-angle-double-right"></i> 
+                                    Prefactura
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('facturaClinica') }}">
+                                    <i class="fa fa-angle-double-right"></i> 
+                                    Factura Clinica
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('generacionRips') }}">
+                                    <i class="fa fa-angle-double-right"></i> 
+                                    Generación de Rips
                                 </a>
                             </li>
                         </ul>
@@ -763,7 +785,8 @@
     <!-- THEME SCRIPTS -->
     {{ HTML::script('assets/js/flex.js') }}
     <!--{{ HTML::script('assets/js/demo/dashboard-demo.js') }}-->
-
+    @section('script')
+    @show
 </body>
 
 </html>
