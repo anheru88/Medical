@@ -66,7 +66,7 @@ class UserController extends BaseController
 	}
 	public function admisionPacientes()
 	{
-		return View::make('formulario.agenda');	
+		return View::make('formulario.admision_pacientes');	
 	}
 	public function prefactura()
 	{
