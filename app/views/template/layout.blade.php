@@ -689,81 +689,77 @@
                             <i class="fa fa-search"></i> Consultas <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="collapse nav" id="consultas">
-                            <li>
-                                <a href="flot.html">
-                                    <i class="fa fa-angle-double-right"></i> Flot Charts
-                                </a>
-                            </li>
-                            <li>
-                                <a href="morris.html">
-                                    <i class="fa fa-angle-double-right"></i> Morris.js
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--Panel seguridad-->
-                    <li class="panel">
-                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#seguridad">
-                            <i class="fa fa-lock"></i> Seguridad <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="collapse nav" id="seguridad">
-                            <li>
-                                <a href="flot.html">
-                                    <i class="fa fa-angle-double-right"></i> Flot Charts
-                                </a>
-                            </li>
-                            <li>
-                                <a href="morris.html">
-                                    <i class="fa fa-angle-double-right"></i> Morris.js
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- /.side-nav -->
-            </div>
-            <!-- /.navbar-collapse -->
-        </nav>
-        <!-- /.navbar-side -->
-        <!-- end SIDE NAVIGATION -->
-
-        <!-- begin MAIN PAGE CONTENT -->
-        <div id="page-wrapper">
-
-            <div class="page-content">
-                @section('contenido')
-                @show
-            </div>
-            <!-- /.page-content -->
-
+                         <li>
+                            <a href="{{ url('/') }}">
+                                <i class="fa fa-angle-double-right"></i> 
+                                Pacientes Admitidos
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Panel seguridad-->
+                <li class="panel">
+                    <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#seguridad">
+                        <i class="fa fa-lock"></i> Seguridad <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="collapse nav" id="seguridad">
+                        <li>
+                            <a href="flot.html">
+                                <i class="fa fa-angle-double-right"></i> Flot Charts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="morris.html">
+                                <i class="fa fa-angle-double-right"></i> Morris.js
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.side-nav -->
         </div>
-        <!-- /#page-wrapper -->
-        <!-- end MAIN PAGE CONTENT -->
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- /.navbar-side -->
+    <!-- end SIDE NAVIGATION -->
+
+    <!-- begin MAIN PAGE CONTENT -->
+    <div id="page-wrapper">
+
+        <div class="page-content">
+            @section('contenido')
+            @show
+        </div>
+        <!-- /.page-content -->
 
     </div>
-    <!-- /#wrapper -->
+    <!-- /#page-wrapper -->
+    <!-- end MAIN PAGE CONTENT -->
 
-    <!-- GLOBAL SCRIPTS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    {{ HTML::script('assets/js/plugins/bootstrap/bootstrap.min.js') }}
-    {{ HTML::script('assets/js/plugins/slimscroll/jquery.slimscroll.min.js') }}
-    {{ HTML::script('assets/js/plugins/popupoverlay/jquery.popupoverlay.js') }}
-    {{ HTML::script('assets/js/plugins/popupoverlay/defaults.js') }}
-    <!-- Logout Notification Box -->
+</div>
+<!-- /#wrapper -->
 
-    <!-- /#logout -->
-    <!-- Logout Notification jQuery -->
-    {{ HTML::script('assets/js/plugins/popupoverlay/logout.js') }}
-    <!-- HISRC Retina Images -->
-    {{ HTML::script('assets/js/plugins/hisrc/hisrc.js') }}
+<!-- GLOBAL SCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+{{ HTML::script('assets/js/plugins/bootstrap/bootstrap.min.js') }}
+{{ HTML::script('assets/js/plugins/slimscroll/jquery.slimscroll.min.js') }}
+{{ HTML::script('assets/js/plugins/popupoverlay/jquery.popupoverlay.js') }}
+{{ HTML::script('assets/js/plugins/popupoverlay/defaults.js') }}
+<!-- Logout Notification Box -->
 
-    <!-- PAGE LEVEL PLUGIN SCRIPTS -->
-    <!-- HubSpot Messenger -->
-    {{ HTML::script('assets/js/plugins/messenger/messenger.min.js') }}
-    {{ HTML::script('assets/js/plugins/messenger/messenger-theme-flat.js') }}
-    <!-- Date Range Picker -->
-    {{ HTML::script('assets/js/plugins/daterangepicker/moment.js') }}
-    {{ HTML::script('assets/js/plugins/daterangepicker/daterangepicker.js') }}
+<!-- /#logout -->
+<!-- Logout Notification jQuery -->
+{{ HTML::script('assets/js/plugins/popupoverlay/logout.js') }}
+<!-- HISRC Retina Images -->
+{{ HTML::script('assets/js/plugins/hisrc/hisrc.js') }}
+
+<!-- PAGE LEVEL PLUGIN SCRIPTS -->
+<!-- HubSpot Messenger -->
+{{ HTML::script('assets/js/plugins/messenger/messenger.min.js') }}
+{{ HTML::script('assets/js/plugins/messenger/messenger-theme-flat.js') }}
+<!-- Date Range Picker -->
+{{ HTML::script('assets/js/plugins/daterangepicker/moment.js') }}
+{{ HTML::script('assets/js/plugins/daterangepicker/daterangepicker.js') }}
     <!-- Morris Charts 
         {{ HTML::script('assets/js/plugins/morris/raphael-2.1.0.min.js') }}
         {{ HTML::script('assets/js/plugins/morris/morris.js') }}
