@@ -8,6 +8,10 @@ class UserController extends BaseController
 	{
 		return View::make('template.layout');	
 	}
+	public function login()
+	{
+		return View::make('formulario.login');
+	}
 	public function actualizarMedico()
 	{
 		return View::make('formulario.actualizar_medico');
