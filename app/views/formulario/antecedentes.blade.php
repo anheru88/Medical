@@ -15,10 +15,11 @@ Antecedentes
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<p>
-			<button class="btn btn-info">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_antecedente">
 				<i class="fa fa-plus-circle"></i>
-				Agregar
+				Antecedente
 			</button>
+			@extends('formulario.form_antecedente')
 		</p>
 	</div>
 	<div class="col-lg-4  pull-right">

@@ -15,10 +15,11 @@ Actualización Paciente
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<p>
-			<button class="btn btn-info">
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_paciente">
 				<i class="fa fa-plus-circle"></i>
 				Paciente
 			</button>
+			@extends('formulario.form_paciente')
 		</p>
 	</div>
 	<div class="col-lg-4  pull-right">

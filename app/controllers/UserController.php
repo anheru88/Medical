@@ -8,6 +8,10 @@ class UserController extends BaseController
 	{
 		return View::make('template.layout');	
 	}
+	public function login()
+	{
+		return View::make('formulario.login');
+	}
 	public function actualizarMedico()
 	{
 		return View::make('formulario.actualizar_medico');
@@ -59,5 +63,25 @@ class UserController extends BaseController
 	public function subcirugia()
 	{
 		return View::make('formulario.subcirugia');
+	}
+	public function agenda()
+	{	
+		return View::make('formulario.agenda');
+	}
+	public function admisionPacientes()
+	{
+		return View::make('formulario.admision_pacientes');	
+	}
+	public function prefactura()
+	{
+		return View::make('formulario.agenda');		
+	}
+	public function facturaClinica()
+	{
+		return View::make('formulario.agenda');	
+	}
+	public function generacionRips()
+	{
+		return View::make('formulario.agenda');	
 	}
 }

@@ -14,10 +14,13 @@ Clasificación de SubCirugias
 </div>
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
-		<p><button class="btn btn-info">
-			<i class="fa fa-plus-circle"></i>
-			Agregar
-		</button></p>
+		<p>
+			<button class="btn btn-info" data-toggle="modal" data-target="#agregar_subcirugia">
+				<i class="fa fa-plus-circle"></i>
+				Agregar
+			</button>
+			@extends('formulario.form_subcirugia')
+		</p>
 	</div>
 	<div class="col-lg-4  pull-right">
 		<div class="input-group">
