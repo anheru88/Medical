@@ -34,3 +34,4 @@ Route::get('/admisionPacientes', 'UserController@admisionPacientes');
 Route::get('/prefactura', 'UserController@prefactura');
 Route::get('/facturaClinica', 'UserController@facturaClinica');
 Route::get('/generacionRips', 'UserController@generacionRips');
+Route::get('/login', 'UserController@login');
