@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'userController@index');
+Route::get('/', 'UserController@index');
 Route::get('/medico', 'UserController@actualizarMedico');
 Route::get('/maestroInsumos', 'UserController@insumos');
 Route::get('/presentacionMedicamentos', 'UserController@medicamentos');
